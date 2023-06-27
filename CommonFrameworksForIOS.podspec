@@ -40,3 +40,25 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
+# pod trunk delete CommonFrameworksForIOS 0.0.1
+# pod trunk push  
+
+# https://medium.com/@jeantimex/create-your-own-cocoapods-library-da589d5cd270
+
+# xcodebuild archive -workspace CommonFrameworks.xcworkspace \
+#   -scheme CommonFrameworks \                                                                        
+#   -sdk iphonesimulator \                                                                         
+#   BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
+#   SKIP_INSTALL=NO
+
+
+# pod spec lint --verbose FrameworkLibs.podspec
+
+# xcodebuild test \
+#   -enableCodeCoverage YES \
+#   -project CommonFrameworks.xcodeproj \
+#   -scheme CommonFrameworks \
+#   -sdk iphonesimulator \
+#   -destination "platform=iOS Simulator,OS=12.1,name=iPhone X" \
+#   ONLY_ACTIVE_ARCH=YES

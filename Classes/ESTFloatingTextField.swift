@@ -32,6 +32,7 @@ enum actionType {
     private var placeholderLabel = UILabel()
     private var isFocusTextField: Bool = false
     private var placeHolderValue: String = ""
+    public var testingObject = ""
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
