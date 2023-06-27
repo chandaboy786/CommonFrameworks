@@ -30,15 +30,71 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.source_files = 'Classes/**/*.swift'
   s.swift_version = '4.2'
- 
+  s.platform = :ios, '11.0'
+
   
   # s.resource_bundles = {
   #   'CommonFrameworksForIOS' => ['CommonFrameworksForIOS/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'MapKit', 'CoreTelephony', 'Foundation'
+  
+  s.dependency 'Alamofire'
+  s.dependency 'AlamofireImage'
+  s.dependency 'IQKeyboardManagerSwift'
+  s.dependency 'RealmSwift'
+  s.dependency 'Cosmos'
+
+  s.dependency 'Firebase/Messaging'
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/Auth'
+  s.dependency 'Firebase/Database'
+  s.dependency 'SkeletonView'
+  s.dependency 'SDWebImage'
+  s.dependency 'ImageSlideshow/Alamofire'
+
+
+  s.subspec 'ReachabilitySwift' do |sp|
+    sp.ios.deployment_target = '11.0'
+  end
+
+  s.subspec 'MBProgressHUD' do |sp|
+    sp.ios.deployment_target = '11.0'
+  end
+
+
+  # s.subspec 'GoogleMaps' do |sp|
+  #   sp.ios.deployment_target = '10.0'
+  # end
+
+# s.subspec 'GooglePlaces' do |sp|
+#     sp.ios.deployment_target = '10.0'
+#   end
+
+
+  s.static_framework = true
+
+  # s.subspec 'Alamofire' do |sp|
+  #   sp.ios.deployment_target = '10.0'
+
+  #   sp.source = { :git => 'https://github.com/Alamofire/Alamofire.git', :tag => '5.7.1'}
+  #   sp.documentation_url = 'https://alamofire.github.io/Alamofire/'
+
+  #   sp.ios.deployment_target = '10.0'
+  #   sp.osx.deployment_target = '10.12'
+  #   sp.tvos.deployment_target = '10.0'
+  #   sp.watchos.deployment_target = '3.0'
+
+  # sp.swift_versions = ['5']
+
+  # sp.source_files = 'Source/*.swift'
+
+  # sp.frameworks = 'CFNetwork'
+
+  # end
+
+
 end
 
 # pod trunk delete CommonFrameworksForIOS 0.0.1
