@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonFrameworksForIOS'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'CommonFrameworksForIOS is custom animated floating TextField written in Swift5 & compatable in version 12.0 and greater.'
 
 # This description is used to generate tags and improve search results.
@@ -27,10 +27,10 @@ Pod::Spec.new do |s|
   s.author           = { 'Muhammad Farhan' => 'muhammad.farhan@golootlo.pk' }
   s.source           = { :git => 'https://github.com/chandaboy786/CommonFrameworks.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.encoresky.com'
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
   s.source_files = 'Classes/**/*.swift'
-  s.swift_version = '4.2'
-  s.platform = :ios, '11.0'
+  s.swift_version = '5.0'
+  s.platform = :ios, '13.0'
 
   
   # s.resource_bundles = {
@@ -40,28 +40,28 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit', 'CoreTelephony', 'Foundation'
   
-  s.dependency 'Alamofire'
-  s.dependency 'AlamofireImage'
-  s.dependency 'IQKeyboardManagerSwift'
-  s.dependency 'RealmSwift'
-  s.dependency 'Cosmos'
+  # s.dependency 'Alamofire'
+  # s.dependency 'AlamofireImage'
+  # s.dependency 'IQKeyboardManagerSwift'
+  # s.dependency 'RealmSwift'
+  # s.dependency 'Cosmos'
 
-  s.dependency 'Firebase/Messaging'
-  s.dependency 'Firebase/Core'
-  s.dependency 'Firebase/Auth'
-  s.dependency 'Firebase/Database'
-  s.dependency 'SkeletonView'
-  s.dependency 'SDWebImage'
-  s.dependency 'ImageSlideshow/Alamofire'
+  # s.dependency 'Firebase/Messaging'
+  # s.dependency 'Firebase/Core'
+  # s.dependency 'Firebase/Auth'
+  # s.dependency 'Firebase/Database'
+  # s.dependency 'SkeletonView'
+  # s.dependency 'SDWebImage'
+  # s.dependency 'ImageSlideshow/Alamofire'
 
 
-  s.subspec 'ReachabilitySwift' do |sp|
-    sp.ios.deployment_target = '11.0'
-  end
+  # s.subspec 'ReachabilitySwift' do |sp|
+  #   sp.ios.deployment_target = '11.0'
+  # end
 
-  s.subspec 'MBProgressHUD' do |sp|
-    sp.ios.deployment_target = '11.0'
-  end
+  # s.subspec 'MBProgressHUD' do |sp|
+  #   sp.ios.deployment_target = '11.0'
+  # end
 
 
   # s.subspec 'GoogleMaps' do |sp|
