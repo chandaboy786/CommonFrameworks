@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonFrameworksForIOS'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'CommonFrameworksForIOS is custom animated floating TextField written in Swift5 & compatable in version 12.0 and greater.'
 
 # This description is used to generate tags and improve search results.
